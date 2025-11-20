@@ -1,19 +1,7 @@
 # Etudiant management 
 
-- Donc, comme prof cest vraiment nice quand meme ne visualliser les etudiant ainsi que des les associer a une place et meme de voir la liste des etudiant qui seront dans notre classe 
-## But: 
-- De gere une classe qui aura des etudiants. Dans cette app, elle donnera la possibilité au prof de faire plusieur modification de la classe. Pour linsant on va rester avec une app assez simple.
+- Programme permettant d'enregistrer les étudiant ainsi que le nombre possible qu'une classe peut avoir comme capaciter. 
 
-## fonctionnalité 
-- Trier
-- supprimer / ajouter / modifier --> la classe
-- la classe (qui posedera le nombre d'étudiant) qui est une liste 
+# Pourquoi ce programme ?
+je suis entrain de developper mes competence en C++ donc ma créativité ma dirigé vers un projet de ce genre. Bien sur il y a des projets encore plus developper que le mien et meme plus beau, mais cest mon objectif, mon projet, ma determination. Je veux developper mes competence en low level code parceque que de mieux que de commencer parmi la base des base de la programmation. (je ne veux pas coder non plus en asembly ou en binaire relaxxxx) 
 
-
-
-## fonctionnalité a venir (skill ++)
--
--
--
--
--
