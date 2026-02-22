@@ -1,16 +1,19 @@
 #include <iostream>
 #include <vector>
 #include <windows.h>
-#include "Etudiant.cpp"
+#include <string>
+#include "GestionnaireEtudiant.cpp"
 using namespace std;
 
  
 
 int main() {
      
-    int option;
+    int option = 0;
+    
+    GestionnaireEtudiant gestionnaire;
 
-    while (option <= 1 || option >= 2) {
+    while (option != 4){ 
         cout << "===================== Menu principale =====================" << endl;
         cout << "1. Creation d'une classe etudiant" << endl;
         cout << "2. Creation Etudiant" << endl;
@@ -42,12 +45,17 @@ int main() {
                     string prenom;
                     cin >> prenom;
                     Etudiant e(i+1, nom, prenom);
+                    gestionnaire.ajouterEtudiant(e);
+
                     printf("\n");
                 }
                 break;
             }
             case 3:
                 printf("========== Lister Etudiant ========== \n");
+                // afficher la liste des etudiants
+                gestionnaire.afficherEtudiants();
+
                 break;
             case 4:
                 cout << "Au revoir!" << endl;
@@ -64,8 +72,8 @@ int main() {
     }         
 
     
-    
 
     return 0;
 }
+
 
