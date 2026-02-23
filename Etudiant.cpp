@@ -11,7 +11,6 @@ class Etudiant{
         
 
     public:
-
         // constructeur 
         Etudiant(int id, string nom, string prenom){
             this->id = id;
@@ -19,18 +18,14 @@ class Etudiant{
             this->prenom = prenom;
         }
 
+        // getter
+        int getId(){return id;}
+        string getNom(){return nom;}
+        string getPrenom(){return prenom;}
 
-        int getId(){
-            return id;
-        }
-
-        string getNom(){
-            return nom;
-        }
-
-        string getPrenom(){
-            return prenom;
-        }
+        // setter
+        void setNom(string nom){this->nom = nom;}
+        void setPrenom(string prenom){this->prenom=prenom;}
 
 
 };
