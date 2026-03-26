@@ -29,11 +29,9 @@ public:
             listeEtudiants.push_back(e);
 
             printf("\n");
-            
         }
-        
+
         printf("Etudiant ajoute avec succes\n");
-        
     }
 
     // methode pour modifier les infos de letudiant
@@ -92,11 +90,32 @@ public:
     }
 
     // methode pour supprimer un etudiant
+    void supprimerEtudiant()
+    {
+        int id_saisi;
+        afficherEtudiants();
+        printf("Entrez le id: ");
+        cin >> id_saisi;
+        
+        for (auto it = listeEtudiants.begin(); it != listeEtudiants.end(); ++it){
+            if(it->getId() == id_saisi){
+                listeEtudiants.erase(it);
+                
+                printf("l'etudiant a été supprimer");
+                break;
+            }else{
+                printf("Existe pas");
+                break;
+            }
+
+        }
+
+    }
 
     // affichage de la liste de etudiants
     void afficherEtudiants()
     {
-        printf("\n========================================");
+        printf("\n========================================\n");
         for (Etudiant e : listeEtudiants)
         {
             printf("ID: %d, Nom: %s, Prenom: %s\n", e.getId(), e.getNom().c_str(), e.getPrenom().c_str());

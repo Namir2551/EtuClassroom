@@ -53,13 +53,13 @@ int main()
 
                 switch (choix)
                 {
-                case 1:
-                {
+                case 1:{
                     gestionnaire.ajouterEtudiant();
                     break;
                 }
                 case 2:
                     // supprimer
+                    gestionnaire.supprimerEtudiant();
                     break;
                 case 3:
                     gestionnaire.modifierEtudiant();
@@ -81,11 +81,11 @@ int main()
 
             break;
         }
-        case 4:
+        case 4:{
             cout << "Au revoir!" << endl;
             exit(0);
             break;
-
+        }
         default:
             cout << endl;
             cout << "** Option invalide, veuillez reessayer **" << endl;
